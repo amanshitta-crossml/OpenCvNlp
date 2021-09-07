@@ -21,15 +21,17 @@ print(len(contours))
 # contours, hierarchy = cv.findContours(canny, cv.RETR_CCOMP, cv.CHAIN_APPROX_NONE )
 # print(len(contours))
 
-drawContours = cv.drawContours(blank, contours, -1, (255,225,254), thickness=1)
+drawContours = cv.drawContours(blank, contours, -1, (255,0,0), thickness=1)
 
+
+cv.imshow('contours', drawContours)
 
 # cv.imshow('Cats',img)
-cv.imshow('blank', blank)
+# cv.imshow('blank', blank)
 # cv.imshow('Gray', gray)
 # cv.imshow('Blur',blur)
 cv.imshow('Canny',canny)
-cv.imshow('Thresh',thresh)
+# cv.imshow('Thresh',thresh)
 
 
 
